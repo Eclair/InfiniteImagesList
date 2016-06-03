@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">InfiniteImagesList</string>
     <string name="image_title_format">Image #%d</string>
+    <string name="image_url_format" formatted="false">http://dummyimage.com/%d&amp;text=%d</string>
 </resources>
