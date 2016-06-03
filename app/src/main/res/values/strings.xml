@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">InfiniteImagesList</string>
+    <string name="image_title_format">Image #%d</string>
+</resources>
