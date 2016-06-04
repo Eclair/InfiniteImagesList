@@ -35,6 +35,7 @@ public class ImageDownloadAsyncTask extends AsyncTask<Integer, Float, Bitmap> {
     private WeakReference<ImageDownloadProgressUpdate> progressUpdate;
     private Integer currentImageId;
     private File temporaryFile;
+    public Bitmap bitmap;
 
     public ImageDownloadAsyncTask(Context context, ImageDownloadProgressUpdate progressUpdate) {
         this.context = context;
@@ -89,7 +90,8 @@ public class ImageDownloadAsyncTask extends AsyncTask<Integer, Float, Bitmap> {
             return null;
         }
 
-        return BitmapFactory.decodeFile(this.temporaryFile.getAbsolutePath());
+        this.bitmap = BitmapFactory.decodeFile(this.temporaryFile.getAbsolutePath());
+        return this.bitmap;
     }
 
     private boolean isImage(URLConnection connection) {

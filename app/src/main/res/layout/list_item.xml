@@ -13,7 +13,8 @@
         android:layout_height="@dimen/list_item_image_size"
         android:layout_width="@dimen/list_item_image_size"
         android:layout_centerVertical="true"
-        android:background="@color/imageGreyOut"/>
+        android:background="@color/imageGreyOut"
+        android:scaleType="fitCenter"/>
 
     <TextView
         android:id="@+id/textView"
